@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="bottom_line_text">
+        <attr name="bottomLineTextColor" format="color" />
+        <attr name="bottomLineShowLine" format="boolean" />
+        <attr name="bottomLineLineColor" format="color" />
+        <attr name="bottomLineDefaultText" format="string" />
+        <attr name="bottomLineTextSize" format="integer" />
+    </declare-styleable>
+</resources>
