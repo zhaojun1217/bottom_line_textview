@@ -11,9 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:bottomLineDefaultText="记返费用户协议"
+        app:bottomLineDefaultText="测试的文本"
         app:bottomLineLineColor="#005590"
+        app:bottomLineLineSize="1"
         app:bottomLineShowLine="true"
-        app:bottomLineTextColor="#005590" />
+        app:bottomLineTextBold="true"
+        app:bottomLineTextColor="#005590"
+        app:bottomLineTextSize="20" />
+
 
 </RelativeLayout>
