@@ -5,9 +5,9 @@
 一个简单的单行textview
 
 ---
-要实现带下划线的textview其实有很多方法 
+要实现带下划线的textview其实有很多方法,可以参考另一位同学的总结 
 
-[简书传送门(我居然在自己项目给别人打广告 -_-! )](https://www.jianshu.com/p/792f67f3d689)
+[简书传送门](https://www.jianshu.com/p/792f67f3d689)
 
 我这个的做法是封了一个布局代码块
 
@@ -30,7 +30,8 @@ allprojects {
 
 ```
 dependencies {
-	        implementation 'com.github.zhaojun1217:bottom_line_textview:Tag'
+	     // implementation 'com.github.zhaojun1217:bottom_line_textview:1.0.3'
+	        implementation 'com.github.zhaojun1217:bottom_line_textview:1.0.1_sl'
 	}
 ```
 
