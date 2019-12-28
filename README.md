@@ -116,7 +116,7 @@ dependencies {
 
 # 有图有真相
 
-![image](https://github.com/zhaojun1217/bottom_line_textview/blob/master/images/bottom_line_textview.png)
+![image](https://github.com/zhaojun1217/bottom_line_textview/blob/master/images/bottom.png)
 
 
 ---
