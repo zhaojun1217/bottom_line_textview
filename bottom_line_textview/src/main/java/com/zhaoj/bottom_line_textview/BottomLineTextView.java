@@ -28,7 +28,7 @@ public class BottomLineTextView extends LinearLayout {
     private boolean showLine = true;
     private boolean textBold = false;
     private int textSize = 15;
-    private int lineSize = 1;
+    private float lineSize = 1;
 
     public BottomLineTextView(Context context) {
         super(context);
@@ -56,8 +56,17 @@ public class BottomLineTextView extends LinearLayout {
      *
      * @param str 文本
      */
-    public void setText(String str) {
-        tvText.setText(str);
+    public BottomLineTextView setText(String str) {
+        this.defaultText = str;
+        tvText.setText(defaultText);
+        return this;
+    }
+
+    /**
+     * 获取文本
+     */
+    public String getText() {
+        return defaultText;
     }
 
     /**
@@ -65,8 +74,17 @@ public class BottomLineTextView extends LinearLayout {
      *
      * @param color 文本颜色
      */
-    public void setTextColor(int color) {
-        tvText.setTextColor(color);
+    public BottomLineTextView setTextColor(int color) {
+        this.textColor = color;
+        tvText.setTextColor(textColor);
+        return this;
+    }
+
+    /**
+     * 获取文本颜色
+     */
+    public int getTextColor() {
+        return textColor;
     }
 
     /**
@@ -74,8 +92,17 @@ public class BottomLineTextView extends LinearLayout {
      *
      * @param color 下划线颜色
      */
-    public void setLineColor(int color) {
-        vLineView.setBackgroundColor(color);
+    public BottomLineTextView setLineColor(int color) {
+        this.lineColor = color;
+        vLineView.setBackgroundColor(lineColor);
+        return this;
+    }
+
+    /**
+     * 获取下划线颜色
+     */
+    public int getLineColor() {
+        return lineColor;
     }
 
     /**
@@ -83,9 +110,10 @@ public class BottomLineTextView extends LinearLayout {
      *
      * @param setShowLine 是否隐藏下划线
      */
-    public void setShowLine(boolean setShowLine) {
+    public BottomLineTextView setShowLine(boolean setShowLine) {
         this.showLine = setShowLine;
         vLineView.setVisibility(showLine ? VISIBLE : GONE);
+        return this;
     }
 
     /**
@@ -93,9 +121,10 @@ public class BottomLineTextView extends LinearLayout {
      *
      * @param setTextBold bool值 是否加粗文本
      */
-    public void setTextBold(boolean setTextBold) {
+    public BottomLineTextView setTextBold(boolean setTextBold) {
         this.textBold = setTextBold;
         tvText.getPaint().setFakeBoldText(textBold);//加粗
+        return this;
     }
 
     /**
@@ -103,9 +132,17 @@ public class BottomLineTextView extends LinearLayout {
      *
      * @param setTextSize 文本字号
      */
-    public void setTextSize(int setTextSize) {
+    public BottomLineTextView setTextSize(int setTextSize) {
         this.textSize = setTextSize;
         tvText.setTextSize(textSize);
+        return this;
+    }
+
+    /**
+     * 获取文本字号
+     */
+    public int getTextSize() {
+        return textSize;
     }
 
     /**
@@ -113,10 +150,18 @@ public class BottomLineTextView extends LinearLayout {
      *
      * @param setLineSize 下划线宽度
      */
-    public void setLineSize(int setLineSize) {
+    public BottomLineTextView setLineSize(float setLineSize) {
         this.lineSize = setLineSize;
         LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, dip2px(mContext, lineSize));
         vLineView.setLayoutParams(params);
+        return this;
+    }
+
+    /**
+     * 获取下划线宽度
+     */
+    public float getLineSize() {
+        return lineSize;
     }
 
 
