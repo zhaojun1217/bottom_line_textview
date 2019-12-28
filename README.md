@@ -116,6 +116,8 @@ dependencies {
 
 # 有图有真相
 
+https://github.com/zhaojun1217/bottom_line_textview/images/WeChat9a58be51d138a1805bf629429e149a2d.png
+
 
 ---
 
