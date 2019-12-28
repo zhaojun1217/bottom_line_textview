@@ -123,3 +123,5 @@ dependencies {
 ---
 
 **此项目本来是为了学习jitpack发布,后来想想怎么也算是个“小轮子”,就发布出来玩玩,喜欢的同学给个小星星~**
+
+**CSDN** [传送门](https://blog.csdn.net/woyvzhuixun/article/details/103745719)
